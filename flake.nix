@@ -27,13 +27,16 @@
                   attrs
                   cachetools
                   confluent-kafka
+                  google
+                  google-cloud-storage
                   httpx
+                  protobuf
                   virtualenv
                 ]);
           in [devpython pyright];
-          # buildInputs = with pkgs; [
-          #   python3
-          # ];
+          buildInputs = with pkgs; [
+            protobuf
+          ];
         };
       }
     );
