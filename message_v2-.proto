@@ -1,0 +1,10 @@
+// This is a new version that is incopatible
+syntax = "proto3";
+
+package acme;
+
+message Person {
+  string name = 1;
+  int32 id = 2;  // Unique ID number for this person.
+  int32 age = 3;
+}
